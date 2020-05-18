@@ -1,0 +1,11 @@
+#panel1, #panel2 {
+  padding: 5px;
+  text-align: center;
+  background-color: #cccccc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+  padding: 50px;
+  display: none;
+}

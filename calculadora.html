@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Academy</title>
+    <meta name="viewport" content="width: width-device, initial-scale=1.0">
+
+    <!-- Incorporamos bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Incorporamos fonts goole -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <!-- Incorporamos fontawesome (íconos)-->
+    <script src="https://kit.fontawesome.com/d4a73c654d.js" crossorigin="anonymous"></script>
+    <!-- Incorporamos Hoja de estilos propia -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- NavBAR ejemplo  - Debemos configurar cada item de la lista y barra en general-->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">ACADEMY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="actividades.html">Actividades</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="capacitacion.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Capacitación
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="capacitaciones.html">Cursos</a>
+              <a class="dropdown-item" href="capacitaciones.html">Carreras</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="capacitaciones.html">Seminarios</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Header de página -->
+    <header class="text-light bg-dark text-right py-5">
+      <div class="container">
+        <h1 class=" display-4 font-weight-bold my-1" > Centro de Capacitación </h1>
+        <p class="my-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="index.html" class = "btn btn-info btn-lg">Inicio</a>
+        <a href="#" class = "btn btn-info btn-lg">Contacto</a>
+      </div>
+    </header>
+
+    <!-- Contenedor Display -->
+    <section class = "conteiner text-center my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3 class="display-3 text-center font-width-bold">Display</h3>
+            <input class="form-control" type="text" name="" value="" id="texto1">
+            <!--input class="form-control" type="text" name="" value="" id="texto2"-->
+            <!--input class="form-control" type="text" name="" value="" id="texto3"-->
+          </div>
+        </div>
+        <div class="row">
+    </section>
+
+    <section class = "conteiner text-center my-2">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >+</button>
+          </div>
+          <div class="col">
+            <button class = "btn btn-info btn-lg" id='restar'  type="button" name="button" onclick="sumar()" >-</button>
+          </div>
+          <div class="col">
+            <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >Borrar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- contenedor operaciones aritméticas 2 -->
+      <section class = "conteiner text-center my-2">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >*</button>
+            </div>
+            <div class="col">
+              <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >/</button>
+            </div>
+            <div class="col">
+              <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >C</button>
+            </div>
+          </div>
+        </div>
+
+        <section class = "conteiner text-center  my-2">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+              <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >1/x</button>
+              </div>
+              <div class="col">
+              <button class = "btn btn-info btn-lg" id='sumar' data-toggle="modal" data-target="#modal1" type="button" name="button" >?</button>
+              <!--a href="#" class = "btn btn-outline-info btn-lg" data-toggle="modal" data-target="#modal1">Ver mas</a-->
+              </div>
+              <div class="col">
+                <button class = "btn btn-info btn-lg" id='sumar' type="button" name="button" onclick="sumar()" >=</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="panel1">Extender panel de ayuda</div>
+        <div id="panel2">Hello world!</div>
+      </div>
+
+    </section>
+
+    <!-- contenedor operaciones aritméticas 1 -->
+    <section>
+      <i class="fas fa-shield-alt"></i>
+      <i class="fas fa-database"></i>
+      <i class="fas fa-laptop-code"></i>
+    </section>
+
+    <!-- Agregamos carousel -->
+
+    <div class="container my-5 py-3">
+      <div class="row">
+        <div class="col-4 p-4 text-right">
+            <h2 class="font-weight-bold" >Mis actividades</h2>
+        </div>
+        <div class="col-4 bg-secondary text-white pt-4 pb-5">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/i1.jpg" width="50" height="100" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/i2.jpg" width="50" height="100" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/i3.png" width="50" height="100" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ayuda Calcu</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/calcu.png" class="img-fluid my-3" alt="Calculadora">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <footer class = "bg-dark text-center text-light p-3">
+    <p>Mi página Personal - 2020 - No copiar</p>
+  </footer>
+
+    <!-- Incorporamos JS, popper y JS Bootstrap (Respetar el orden!!!)-->
+    <!-- script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
